@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+		body { margin:0; padding: 0;}
+		html, #map { position:absolute; top:0; bottom:0; width:100%;}
+	</style>
+	
+	<title>OMG A BASE LAYER</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- leaflet -->
+	<link rel="stylesheet" href="src/leaflet.css" />
+	<script src="src/leaflet-src.js"></script>
+</head>
+<body>
+	<div id="map"></div>
+	<!--  -->
+	<script>
+		// source for our tile layer
+		var stamenUrl = 'http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
+
+		osmAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+
+		baselayer = L.tileLayer(stamenUrl, {maxZoom: 20 attribution: osmAttrib})
+		
+		var map = new L.Map('map', {layers: [baselayer], center: new L.LatLng(40.7809,-73.9789), zoom: 12 });
+	</script>
+</body>
+</html>

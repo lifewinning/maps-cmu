@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>CMU 1/17/16</title><meta charset='utf-8'><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href='/big.css' rel='stylesheet' type='text/css' />
+<script src='/big.js'></script></head><body>
+
+<div>the base layer!!</div>
+	<div>tiles<br>
+	types of tiles<br>
+	navigating companies and libraries
+	</div>
+	<div>let's talk about <em>tiles</em></div>
+	<div>256x256 raster image files</div>
+	<div>number of tiles expands exponentially per zoom level</div>
+	<div>
+		zoom level 0: <em>1</em> tile<br>
+		zoom level 1: <em>4</em> tiles<br>
+		and so on...
+	</div>
+	<div><img src="img/zoom-13-tiles.png"></div>
+	<div><a href="http://tile.openstreetmap.org/4/4/5.png">http://tile.openstreetmap.org/4/4/5.png</a></div>
+	<div>
+		http://<em>tile.openstreetmap.org</em>/4/4/5.png<br><br>
+		<em>tile server</em>
+	</div>
+		http://tile.openstreetmap.org/<em>4</em>/4/5.png<br><br>
+		<em>zoom level</em>
+	</div>
+	<div>
+		http://tile.openstreetmap.org/4/<em>4/5</em>.png<br><br>
+		<em>x/y coordinates in the tileset</em>
+	</div>
+	<div>tile <em>styling</em> happens in a variety of ways</div>
+	<div>which we're not covering in-depth right this second, but can look like this:</div>
+	<div><img src="img/cartocss.png"></div>
+	<div><img src="img/tangram-yaml.png"></div>
+	<div><img src="anatomy-of-a-web-map.png"></div>
+	<div>tiles are <em>rendered</em> and <em>cached</em></div>
+	<div>so that they will load real fast like this</div>
+	<div><img src="img/tiles-loading.gif"></div>
+	<div>types</div>
+		<div>raster: lots and lots of images</div>
+		<div>vector: lots of packets of data rendered on the fly</div>
+		<div><img src="img/vector-tile.gif"></div>
+		<div>super exciting cool thing we can look more at later</div>
+	<div>base layer sources</div>
+		<div>you can <em>run your own tileserver</em>...</div>
+		<div><img src="img/srsly.gif"></div>
+		<div>that is a whole other conversation tbh</div>
+		<div>different map platforms (Google, Mapquest, Mapbox, Mapzen) offer use of base layers, usually requiring an <em>API key</em></div>
+		<div>today we'll be using a base layer from <em>maps.stamen.com</em>, which uses <em>OpenStreetMap</em> data but doesn't require an API key</div>
+	<div>questions?</div>
+		<!-- actually show them rendering a basemap -->
+
+	<div>example</div>
+	<div><a href="http://leafletjs.com">Leaflet</a></div>
+	<div>
+		created and open-sourced in 2011 by Vladimir Agafonkin for <em>CloudMade</em><br>
+		has really strong community supporting it, making plugins, etc.<br>
+		Mapbox hired Vlad in 2013, so it's increasingly optimized to work with Mapbox products<br>
+		tldr capitalism and open source ¯\_(ツ)_/¯ 
+	</div>
+	<div><a href="/demos/basemap">http://lifewinning.github.io/maps-cmu/demos/basemap</a></div>
+	<div><img src="img/baselayer-code.png"></div>
+	<div>questions?</div>
+
+	<div><a href="/3-data-layer">moving on...</a></div>
+</body>
+</html>
