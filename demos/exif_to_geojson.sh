@@ -1,8 +1,5 @@
  #!/bin/bash
 
-# TSRS='X'
-# PRJ=`echo $TSRS | sed s/\"//g | cut -f2 -d ':'`   # variable values for sed here
-
 # $1 = directory where your images live
 # $2 = filename you want to give your final geojson
 
@@ -13,15 +10,14 @@ cd $1
 
 mkdir $2
 
-for N in *.jpg
+for JPG in *.jpg
 do 
 	GPX=`echo $N | sed "s/.jpg/.gpx/"`	
-	echo "converting file $N to $GPX"
+	echo "converting file $JPG to $GPX"
 
-	# if not running GPSBabel from homebrew, uncomment the below and comment out the current gpsbabel command
+	# if not running GPSBabel from homebrew: uncomment the below and comment out the current gpsbabel command
 
 	# cd GPSBabelFE.app/Contents/Resources
-
 	# gpsbabel \
 	# -i exif \
 	# -f ../../../$N \
@@ -31,7 +27,7 @@ do
 
 	gpsbabel \
 	-i exif \
-	-f $N \
+	-f $JPG \
 	-o gpx \
 	-F $GPX \
 
@@ -43,6 +39,7 @@ do
 	echo "converting $GPX to geojson..."
 	GEOJSON=`echo $GPX | sed "s/.gpx/.geojson/"`
 	togeojson $GPX > $GEOJSON
+	rm -rf $GPX
 
 	mv $GEOJSON $2
 done

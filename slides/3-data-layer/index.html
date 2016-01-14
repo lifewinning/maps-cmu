@@ -3,6 +3,121 @@
 <script src='../big.js'></script></head><body>
 
 <div>the data layer!</div>
+<div>
+	<img src="img/fuckyeahdata.gif">
+</div>
+<div>technically <em>all</em> layers are data layers</div>
+<div>but bear with me here</div>
 <div></div>
+<div>types of objects in geodata:</div>
+<div>lines<br><br>points<br><br>polygons</div>
+<div>
+	<!-- relevant image for this -->
+</div>
+<div>geodata formats</div>
+<div>
+	non-web:
+</div>
+<div>
+	- GPX (GPS Exchange Format)<br><br>
+	- NMEA (National Marine Electronics Association spec)<br><br>
+	- ESRI Shapefiles (.zip or .shp) <br><br>
+	- <em>EXIF</em> (Exchangeable Image File Format)
+</div>
+<div>
+	web-readable:
+</div>
+<div>
+	- KML (Keyhole Markup Language)<br><br>
+	- <em>GeoJSON<em><br><br>
+	- TopoJSON<br><br>
+</div>
+<div>but also like, a <em>CSV</em> even</div>
+<div>
+	converting <em>non-web</em> to <em>web</em>
+</div>
+<div>online services</div>
+<div>
+	- <a href="http://geojson.io">geojson.io</a> (free) <br><br>
+	- <a href="http://cartodb.com">CartoDB</a> (subscription-based)
+</div>
+<div>desktop/command line tools</div>
+<div>
+	- ogr2ogr (part of GDAL)<br><br>
+	- GPSBabel<br><br>
+	- togeojson, csvtogeojson...
+</div>
+<div>
+	<a href="/maps-cmu/resources/data-toolkit.html">full overview of my personal geodata toolkit</a>
+</div>
+
+<div>example:</div>
+<div>converting <em>exif data</em> to <em>geojson</em></div>
+<div>this isn't necessarily the <em>best</em> method tbh</div>
+<div>this just happens to be a way I've done it</div>
+<div>and I wanted to introduce you to some relevant tools</div>
+<div>but for real you could just do this all in node</div>
+<div><center>¯\_(ツ)_/¯</center></div>
+<div><a href="https://raw.githubusercontent.com/lifewinning/maps-cmu/gh-pages/demos/exif_to_geojson.sh">exif_to_geojson.sh</a></div>
+<div>
+	<img src="img/bash-1.png">
+</div>
+<div>
+gpsbabel -i <em>exif</em> -f <em>image.jpg</em> -o <em>gpx</em> -F <em>image.gpx</em> 
+</div>
+<div>
+	<img src="img/bash-2.png">
+</div>
+<div>
+togeojson <em>image.gpx</em> > <em>image.geojson</em>
+</div>
+<div>
+geojson-merge <em>image-1.geojson</em> <em>image-2.geojson</em> <em>image-3.geojson</em> > <em>images.geojson</em>
+</div>
+<div>
+	<img src="img/howisendallmyemails.gif">
+</div>
+<div>but whoa whoa whoa</div>
+<div>before you <em>convert</em> data</div>
+<div>where do you <em>find</em> it?</div>
+<div>
+	<a href="/maps-cmu/resources/datasources.html">here is a pile of data sources to look at</a>
+</div>
+<div>
+	pulling data out of OpenStreetMap
+</div>
+<div>
+	Overpass API
+</div>
+<div>
+	Let's find a dataset!
+</div>
+<div>joining geodata to other data</div>
+<div>
+	<img src="img/cables.png">
+</div>
+<div>
+	<img src="img/submarine_cables.png">
+</div>
+<div>
+	<img src="img/cablejson.png">
+</div>
+<div>
+	- GIS desktop software <br><br>
+	- joiner (a charming lil' node module)
+</div>
+<div>
+	okay
+</div>
+<div>
+	we have a base layer
+</div>
+<div>
+	we have some data layers
+</div>
+<div>
+	<a href="/maps-cmu/slides/4-hello-world">let's put them on a map!!</a> 
+</div>
 </body>
 </html>
+
