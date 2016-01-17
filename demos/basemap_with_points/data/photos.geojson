@@ -1,0 +1,317 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004822,
+                    40.741358
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_102704"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004861,
+                    40.741669
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_102723"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004853,
+                    40.741675
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_102853"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004814,
+                    40.741592
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_102931"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004786,
+                    40.741606
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_102937"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.00475,
+                    40.741611
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103001"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004758,
+                    40.741597
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103115"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004753,
+                    40.741592
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103119"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.00475,
+                    40.741586
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103135"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004753,
+                    40.741586
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103139"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004753,
+                    40.741583
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103154"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004753,
+                    40.741583
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103158"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.004169,
+                    40.741381
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103220"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.003972,
+                    40.741431
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_103301"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.001339,
+                    40.7412
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104006"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.001264,
+                    40.741125
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104021"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.001242,
+                    40.741092
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104117"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.001186,
+                    40.741081
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104313"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.002328,
+                    40.741261
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104334"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.002083,
+                    40.741231
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104434"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.002064,
+                    40.741222
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104440"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.002075,
+                    40.741225
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_104705"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.005189,
+                    40.741719
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_105455"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.007067,
+                    40.743472
+                ]
+            },
+            "properties": {
+                "image": "IMG_20140421_111142"
+            }
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+		body { margin:0; padding: 0;}
+		html, #map { position:absolute; top:0; bottom:0; width:100%;}
+	</style>
+	
+	<title>OMG THERE ARE POLYGONS ALSO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- leaflet -->
+	<link rel="stylesheet" href="src/leaflet.css" />
+	<script src="src/leaflet-src.js"></script>
+
+	<!-- adding in jquery because WE CAN -->
+	<script src="src/jq.min.js"></script>
+
+	<!-- leaflet ajax plugin -->
+	<script src="src/leaflet.ajax.min.js"></script>
+</head>
+<body>
+	<div id="map"></div>
+	<!--  -->
+	<script>
+		// source for our tile layer
+		var stamenUrl = 'http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
+
+		osmAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+
+		baselayer = L.tileLayer(stamenUrl, {attribution: osmAttrib})
+		
+		var map = new L.Map('map', {layers: [baselayer], center: new L.LatLng(40.74188, -74.00473), zoom: 15 });
+
+		// adding geoJSON points
+
+		//add tooltip style first tho 
+		function popUp(f,l){
+		    var popUpcontent = 
+		    '<a href=/img/'+f.properties.image+'.jpg><img src="./img/'+f.properties.image+'.jpg" width="250"style="padding:1px; margin:1px;"></a>';
+		    l.bindPopup(popUpcontent);
+		    };
+
+		//here is some phone data!
+
+		$.getJSON("./data/photos.geojson", function(data) {
+	    var phone = L.geoJson(data, {onEachFeature: popUp, pointToLayer: function (feature, latlng) {
+			return L.circleMarker(latlng, {
+					radius: 7,
+					fillColor: "#729349",
+					color: "#fff",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 1
+					});
+				}
+			}
+		)
+			
+	    phone.addTo(map);
+  		});
+
+  		// ajax plugin method for adding data
+
+  		// styling for building data
+  		var overpass_style = {
+		    "fillColor": "#FF9900",
+		    "fillOpacity": .3,
+		    "weight": 0, 
+		};
+
+  		var overpass = new L.geoJson.ajax('./data/overpass.geojson',{style: overpass_style});
+
+  		overpass.addTo(map);
+	</script>
+</body>
+</html>

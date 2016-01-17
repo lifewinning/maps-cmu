@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20151113_111343",
+        "desc": "20151113_111343",
+        "time": "2015-11-13T11:13:40Z",
+        "sym": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.116388889,
+          51.512222222,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20151113_113304",
+        "desc": "20151113_113304",
+        "time": "2015-11-13T11:33:03Z",
+        "sym": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.110555556,
+          51.513888889,
+          87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20151113_113320",
+        "time": "2015-11-13T11:33:19Z",
+        "sym": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.110555556,
+          51.513888889,
+          88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20151113_113332",
+        "time": "2015-11-13T11:33:32Z",
+        "sym": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.110555556,
+          51.513888889,
+          90
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20151113_113333",
+        "time": "2015-11-13T11:33:32Z",
+        "sym": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.110555556,
+          51.513888889,
+          89
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20151113_115538",
+        "desc": "20151113_115538",
+        "time": "2015-11-13T11:55:34Z",
+        "sym": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.110833333,
+          51.513888889,
+          0
+        ]
+      }
+    }
+  ]
+}

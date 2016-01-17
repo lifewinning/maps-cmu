@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+img{
+    border: none;
+    margin: auto;
+    display: inline-block;
+    max-width: 5px;
+}
+a {
+    color: #0069d6;
+}
+a:
+hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+    margin: auto;
+    display: inline-block;
+    max-width: 5px;
+
+}
+
+
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Neat Mapping Tools For You To Know About</title>
+
+</head>
+<body>
+<h1>Neat Mapping Tools For You To Know About</h1>
+
+<hr />
+
+<h2>Free Open Source Libraries</h2>
+
+<h3>Leaflet</h3>
+
+<p><a href="http://leafletjs.com">leafletjs.com</a></p>
+
+<p>The tool we'll be mainly looking at today, and a really great foundational open source library for rendering slippy maps.</p>
+
+<h3>D3</h3>
+
+<p><a href="http://d3js.org">d3js.org</a></p>
+
+<p>Originally created by Mike Bostock at and for the New York Times, D3 (data-driven documents) is a javascript library for rendering data visualizations as SVGs. It's pretty vast and covers a lot of use cases, including maps. Here is <a href="http://bost.ocks.org/mike/map/">one intro</a> to mapping with D3.</p>
+
+<h2>Desktop Software</h2>
+
+<h3>ESRI/ArcGIS</h3>
+
+<p><a href="http://esri.com">esri.com</a></p>
+
+<p>ESRI basically dominates the market for GIS software. They kind of <em>are</em> GIS software. You will run into their proprietary data format, the <em>shapefile</em>, pretty much all over the place. It's really expensive software, but universities often have licenses if you're a student and want to try or learn it.</p>
+
+<h3>QGIS</h3>
+
+<p><a href="http://qgis.org">qgis.org</a></p>
+
+<p>Pretty much the only open source desktop GIS software out there. It's clunky as hell sometimes but gets the job done. Created originally by Boundless, a company described in more detail further below.</p>
+
+<h2>Companies Offering Services</h2>
+
+<h4>Caveats, always caveats</h4>
+
+<p>A lot of the platforms and open source tools currently available for web mapping are products supported by companies. We're not going deep into the specifics of these platforms and tools mainly because (1) I didn't really want to waste time on people registering for accounts and API keys and (2) these companies are all really, really good at documentation of their products and I am pretty sure you're all perfectly competent people.</p>
+
+<p>In addition to information about their specific tools, I've included some background on the companies--software doesn't emerge from a vacuum.</p>
+
+<h3>Mapbox</h3>
+
+<p><a href="http://mapbox.com">mapbox.com</a></p>
+
+<p><strong>TLDR</strong></p>
+
+<p>Basically, if you are working with anything OpenStreetMap related, you're going to run into tools built by Mapbox. And the tools they build are actually pretty great.</p>
+
+<p><strong>Who They Are</strong></p>
+
+<p>Mapbox is about 6 years old, and began as a project from Development Seed, a boutique data visualization studio working with NGOs in Washington, DC. Mapbox's tools were, essentially, tools Development Seed needed to do their work, and they realized there was a solid business opportunity in making those tools available to others. They also offer one of the few alternatives to Google or Bing satellite imagery, in partnership with Digital Globe.</p>
+
+<p>Mapbox currently has offices in San Francisco, Washington, DC; Bangalore, and Peru. Their funders include The Foundry Group, DFG, DBI Investors, Thrive Capital, Pritzker Group, and Promus Ventures.</p>
+
+<p><strong>What They Offer</strong>:</p>
+
+<ul>
+<li>Mapbox Studio, free desktop software for styling and editing web maps</li>
+<li>hosting services for map tiles created in Mapbox Studio (cost varies on use)</li>
+<li>A suite of APIs:
+
+<ul>
+<li>mapbox.js: library for generating maps, built on top of Leaflet</li>
+<li>mapbox-gl.js: library for working with vector tile maps</li>
+<li>Services: Geocoding, Directions, more things</li>
+<li>iOS and Android SDKs</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>CartoDB</h3>
+
+<p>cartodb.com</p>
+
+<p><strong>TLDR</strong></p>
+
+<p>If you want to work with really large datasets and prefer styling in a GUI, this is a super useful service.</p>
+
+<p><strong>Who They Are</strong></p>
+
+<p>CartoDB was founded in 2012 and has offices in Madrid and New York City. Their funders include Accel Partners and Salesforce Ventures.</p>
+
+<p><strong>What They Offer</strong></p>
+
+<p>CartoDB is basically a platform-as-service model company that provides users with a nice interface for working with hosted geodata. It's basically a dashbaord for PostGIS with a styling wizard tool, and some helpful APIs for integrating and pulling CartoDB-hosted data onto a map.</p>
+
+<h3>Mapzen</h3>
+
+<p>mapzen.com</p>
+
+<p><strong>TLDR</strong></p>
+
+<p>Super-cool products, which are finally starting to kind of stabilize, but not necessarily production-ready tools.</p>
+
+<p><strong>Who They Are</strong></p>
+
+<p>Mapzen started in 2013. It's an R&amp;D lab disguised as a startup, currently being funded entirely by Samsung. As far as anyone can tell it's a gamble within Samsung to see whether building out better open source mapping tools will offer better alternatives to Google Maps, so that Samsung can eventually fork Android and build their own OS without needing Google tools, like Maps. Whether that will work is totally anyone's guess.</p>
+
+<p><strong>What They Offer</strong></p>
+
+<ul>
+<li>A bunch of API services for things like vector tile rendering, search, and routing, which are built on top of open source libraries they maintain. Those libraries include:
+
+<ul>
+<li>Tangram, a GL rendering engine for vector data. Mostly super cool because of its capacity for making 3D maps and for doing hella weird shit with shaders.</li>
+<li>Pelias, a geocoder</li>
+<li>Valhalla, a routing engine</li>
+</ul>
+</li>
+</ul>
+
+
+<p>(Fact: all of Mapzen's libraries have way, way better names than the API services)</p>
+
+<h3>Boundless</h3>
+
+<p><a href="http://boundlessgeo.com/">boundlessgeo.com</a></p>
+
+<p><strong>TLDR</strong></p>
+
+<p>Built many of the open source tools that are the foundation of working with spatial data online. You will probably never actually have to give them money.</p>
+
+<p><strong>Who They Are</strong></p>
+
+<p>Originally called OpenGeo, Boundless was an open source lab working on really awesome mapping tools. They got a rebranding and new business focus  when they got a huge round of funding from In-Q-Tel, the CIA's venture capital firm. Have subsequently been spooky and unsettling AF, but their open source tools remain open.</p>
+
+<p><strong>What They Offer/Built</strong></p>
+
+<ul>
+<li>PostGIS, a geodatabase platform built on top of Postgres</li>
+<li>QGIS</li>
+<li>OpenLayers, another tile rendering framework that they keep trying to make happen and it's just not happening really</li>
+</ul>
+
+</body>
+</html>
