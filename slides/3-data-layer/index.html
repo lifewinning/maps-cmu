@@ -8,11 +8,10 @@
 </div>
 <div>technically <em>all</em> layers are data layers</div>
 <div>but bear with me here</div>
-<div></div>
 <div>types of objects in geodata:</div>
 <div>lines<br><br>points<br><br>polygons</div>
 <div>
-	<!-- relevant image for this -->
+	<img src="img/linespointspolygons.png">
 </div>
 <div>geodata formats</div>
 <div>
@@ -29,12 +28,12 @@
 </div>
 <div>
 	- KML (Keyhole Markup Language)<br><br>
-	- <em>GeoJSON<em><br><br>
+	- <em>GeoJSON</em><br><br>
 	- TopoJSON<br><br>
 </div>
 <div>but also like, a <em>CSV</em> even</div>
 <div>
-	also PostGIS/database querying
+	also PostGIS
 </div>
 <div>
 	this is where I should tell you more about <a href="http://cartodb.com">cartodb</a> 
@@ -44,8 +43,9 @@
 </div>
 <div>online services</div>
 <div>
-	- <a href="http://geojson.io">geojson.io</a> (free) <br><br>
-	- <a href="http://cartodb.com">CartoDB</a> (subscription-based)
+	- <a href="http://cartodb.com">CartoDB</a> (subscription-based)<br><br>
+	- <a href="http://www.mapshaper.org/">Mapshaper</a> (free)
+	<!-- <br><br>- <a href="http://geojson.io">geojson.io</a> (free) -->
 </div>
 <div>desktop/command line tools</div>
 <div>
@@ -54,7 +54,7 @@
 	- togeojson, csvtogeojson...
 </div>
 <div>
-	<a href="/maps-cmu/resources/data-toolkit.html">full overview of my personal geodata toolkit</a>
+	<a href="/maps-cmu/resources/data-toolkit.html">more here</a>
 </div>
 
 <div>example:</div>
@@ -62,23 +62,22 @@
 <div>this isn't necessarily the <em>best</em> method tbh</div>
 <div>this just happens to be a way I've done it</div>
 <div>and I wanted to introduce you to some relevant tools</div>
-<div>but for real you could just do this all in node</div>
 <div><center>¯\_(ツ)_/¯</center></div>
-<div><a href="https://raw.githubusercontent.com/lifewinning/maps-cmu/gh-pages/demos/exif_to_geojson.sh">exif_to_geojson.sh</a></div>
-<div>
-	<img src="img/bash-1.png">
-</div>
 <div>
 gpsbabel -i <em>exif</em> -f <em>image.jpg</em> -o <em>gpx</em> -F <em>image.gpx</em> 
-</div>
-<div>
-	<img src="img/bash-2.png">
 </div>
 <div>
 togeojson <em>image.gpx</em> > <em>image.geojson</em>
 </div>
 <div>
 geojson-merge <em>image-1.geojson</em> <em>image-2.geojson</em> <em>image-3.geojson</em> > <em>images.geojson</em>
+</div>
+<div><a href="https://raw.githubusercontent.com/lifewinning/maps-cmu/gh-pages/demos/exif_to_geojson.sh">exif_to_geojson.sh</a></div>
+<div>
+	<img src="img/bash-1.png">
+</div>
+<div>
+	<img src="img/bash-2.png">
 </div>
 <div>
 	<img src="img/howisendallmyemails.gif">
@@ -96,10 +95,13 @@ geojson-merge <em>image-1.geojson</em> <em>image-2.geojson</em> <em>image-3.geoj
 	Overpass API
 </div>
 <div>
-	<img src="img/tags.png">
+	<a href="http://overpass-turbo.eu">overpass-turbo.eu</a>
 </div>
 <div>
 	<a href="http://wiki.openstreetmap.org/wiki/Map_Features">wiki.openstreetmap.org/wiki/Map_Features</a>
+</div>
+<div>
+	<img src="img/tags.png">
 </div>
 <div>
 	<img src="img/haunted.png">
@@ -110,6 +112,9 @@ geojson-merge <em>image-1.geojson</em> <em>image-2.geojson</em> <em>image-3.geoj
 <div>
 	<img src="img/overpass_detail.png">
 </div>
+<div>
+	<img src="img/overpass-geojson.png">
+</div>
 <div>joining geodata to other data</div>
 <div>
 	<img src="img/cables.png">
@@ -119,6 +124,12 @@ geojson-merge <em>image-1.geojson</em> <em>image-2.geojson</em> <em>image-3.geoj
 </div>
 <div>
 	<img src="img/cablejson.png">
+</div>
+<div>
+	<a href="http://lifewinning.com/submarine-cable-taps">lifewinning.com/submarine-cable-taps</a>
+</div>
+<div>
+	basically, <em>table joins</em>
 </div>
 <div>
 	okay

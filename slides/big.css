@@ -27,8 +27,8 @@ a {
 img {
   min-height:100vh;
   max-height: 100vh;
-  display:inline-block;
-
+  margin:  0 auto;
+  display: inline-block;
 }
 
 div {
