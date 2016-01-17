@@ -19,13 +19,15 @@
 	<!--  -->
 	<script>
 		// source for our tile layer
-		var stamenUrl = 'http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
+		var stamenUrl = 'http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png'
 
+		//attributions matter!!
 		osmAttrib = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
 
-		baselayer = L.tileLayer(stamenUrl, {maxZoom: 20 attribution: osmAttrib})
+		baselayer = L.tileLayer(stamenUrl, {attribution: osmAttrib})
 		
-		var map = new L.Map('map', {layers: [baselayer], center: new L.LatLng(40.7809,-73.9789), zoom: 12 });
+		var map = new L.Map('map', {layers: [baselayer], center: new L.LatLng(40.7809,-73.9789), zoom: 15 });
 	</script>
+	
 </body>
 </html>
